@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/* CSS Document */
+
+        .col2 {
+            background-image: url(img/bg2.png);
+            background-repeat:none;
+            background-size:cover;
+        }
+        .col3 {
+            background-image: url(img/bg3.png);
+            background-repeat:none;
+            background-size:cover;
+        }
+		.col4 {
+            background-image: url(img/bg3.png);
+            background-repeat:none;
+            background-size:cover;
+        }
+		.col5 {
+            background-image: url(img/bg3.png);
+            background-repeat:none;
+            background-size:cover;
+        }
+        
+        /* Image To Text On Hover */
+        
+        .hovtxt {
+            background:#00000080;
+            opacity:0;
+            transition-duration:.5s;
+            transition-timing-function: ease-in-out;
+            height:300px;
+        }
+        
+         .hovtxt:hover {
+            opacity:1;
+        }
+    

@@ -1,0 +1,575 @@
+/* Styling for double navbar */
+	html,body,header{
+	height: 12vh;
+	font-family: 'Lato', sans-serif;
+    color: #3c3c3c;
+    font-weight: 400;
+	scroll-behavior: smooth;
+	}
+
+@media (max-width: 991px) {
+     .container {
+      max-width: 98%;
+    }
+}
+
+@media (min-width: 768px) {
+}
+
+.main-logo {
+  left: 0%;
+  top: 28%;
+  margin-left: 4% !important;
+}
+
+.nav-link {
+	 color: darkgray!important;
+	 font-size: 17px;
+	 transition: .5s ease-in-out;
+}
+
+.navbar-nav li a:hover{
+	color: black !important;
+}
+
+.fixed-top{
+	padding: 20px 0 20px 8px;
+}
+
+@media screen  and (max-width:767px){
+	.navbar-light{
+		background-color: white !important;
+	}
+}
+
+#main-bar{
+	position: absolute;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+	background-color:white !important;
+}
+
+#main-bar .nav-item{
+	margin-left: 10px;
+	font-size: 17px;
+}
+
+/* adds some margin below the link sets  */
+.navbar .dropdown-menu div[class*="col"] {
+   margin-bottom:1rem;
+}
+
+.navbar .dropdown-menu {
+  border:none;
+  background-color:white !important;
+}
+
+/* breakpoint and up - mega dropdown styles */
+@media screen and (min-width: 1000px) {
+  
+  /* remove the padding from the navbar so the dropdown hover state is not broken */
+.navbar {
+  padding-top:0px;
+  padding-bottom:0px;
+}
+
+/* remove the padding from the nav-item and add some margin to give some breathing room on hovers */
+.navbar .nav-item {
+  padding:.5rem .5rem;
+  margin:0 .25rem;
+}
+
+/* prevent navbar shift */
+.navbar {        
+    margin-right: auto;    
+    margin-left: auto;    
+    max-width: 100%;    
+    min-width: 1000px;
+}
+
+/* makes the dropdown full width  */
+.navbar .dropdown {position:static;}
+
+.navbar .dropdown-menu {
+  width:100%;
+  left:0;
+  right:0;
+/*  height of nav-item  */
+  top:45px;
+  
+  display:block;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s linear;
+  
+}
+
+  
+  /* shows the dropdown menu on hover */
+.navbar .dropdown:hover .dropdown-menu, .navbar .dropdown .dropdown-menu:hover {
+  display:block;
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity 0.3s linear;
+}
+  
+ .navbar .dropdown-menu {
+    border: 1px solid rgba(0,0,0,.15);
+    background-color: #fff;
+  }
+
+}
+
+/*Typography*/
+h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 44px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+
+h5 {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.label {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+/*Text Colors*/
+.primary {
+    color: #fd7e14;
+}
+
+.secondary {
+    color: #25246e;
+}
+
+.accent {
+    color: #62cedb;
+}
+
+.mme {
+    color: #a34074;
+}
+
+.learn {
+    color: #0073B2;
+}
+
+.camp {
+    color: #eb5a00;
+}
+
+.dark-grey {
+    color: #3c3c3c;
+}
+
+.light {
+    color: #ffffff;
+}
+
+.light-grey {
+    color: #f6f7f8;
+}
+
+.medium-grey {
+    color: #e6eaea;
+}
+
+.dark-grey {
+    color: #3c3c3c;
+}
+
+/*Background Colors*/
+.bkg-primary {
+    background-color: #fd7e14;
+}
+
+.bkg-primary-light {
+    background-color: #fce7f0;
+}
+
+.bkg-secondary {
+    background-color: #25246e;
+}
+
+.bkg-secondary-light {
+    background-color: #e9e9f1;
+}
+
+.bkg-accent {
+    background-color: #62cedb;
+}
+
+.bkg-mme {
+    background-color: #a34074;
+}
+
+.bkg-learn {
+    background-color: #0073B2;
+}
+
+.bkg-camp {
+    background-color: #eb5a00;
+}
+
+.bkg-accent-light {
+    background-color: #e0f5f8;
+}
+
+.bkg-light {
+    background-color: #ffffff;
+}
+
+.bkg-light-grey {
+    background-color: #f6f7f8;
+}
+
+.bkg-medium-grey {
+    background-color: #e6eaea;
+}
+
+.bkg-dark-grey {
+    background-color: #3c3c3c;
+}
+
+
+/* Hero Text BKg */
+.bkg-hero {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    background-color: rgba(246, 247, 248, 0.5);
+}
+
+/*Border*/
+.border-bottom-primary {
+    border-bottom: 20px solid #fd7e14;
+}
+
+/*Solid Buttons*/
+
+.btn-primary {
+    background-color: #fd7e14;
+    border: 1px solid #fd7e14;
+    border-radius: 3px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 18px 0;
+}
+.btn-primary:active {
+    background: none;
+    outline: none;
+}
+.btn-primary:visited {
+    background-color: #fd7e14;
+        border: 1px solid #fd7e14;
+        border-radius: 3px;
+        color: #ffffff;
+        text-decoration: underline;
+        padding: 10px 20px;
+        margin: 18px 0;
+}
+.btn-primary:focus-visible {
+    background-color: #fd7e14;
+    border: 1px solid #fd7e14;
+    border-radius: 3px;
+    color: #ffffff;
+    text-decoration: underline;
+    padding: 10px 20px;
+    margin: 18px 0;
+}
+.btn-primary:focus{
+    background-color: #fd7e14;
+    border: 1px solid #fd7e14;
+    border-radius: 3px;
+    color: #ffffff;
+    text-decoration: underline;
+    padding: 10px 20px;
+    margin: 18px 0;
+}
+.btn-primary:focus-within {
+    background-color: #fd7e14;
+    border: 1px solid #fd7e14;
+    border-radius: 3px;
+    color: #ffffff;
+    text-decoration: underline;
+    padding: 10px 20px;
+    margin: 18px 0;
+}
+
+.btn-primary:hover {
+    background-color: #ffffff;
+    border: 2px solid #fd7e14;
+    border-radius: 3px;
+    color: #fd7e14;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 18px 0;
+}
+
+
+.btn-secondary {
+    background-color: #25246e;
+    border-radius: 3px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 18px 0;
+}
+
+.btn-secondary:hover {
+    background-color: #ffffff;
+    border: 2px solid #25246e;
+    border-radius: 3px;
+    color: #25246e;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 18px 0;
+}
+
+.btn-dark-grey {
+    background-color: #363636;
+    border-radius: 3px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 18px 0;
+}
+
+.btn-dark-grey:hover {
+    background-color: #ffffff;
+    border: 2px solid #363636;
+    border-radius: 3px;
+    color: #363636;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 18px 0;
+}
+
+/*Outlined Buttons*/
+.btn-primary-outline {
+    background-color: #ffffff;
+    border: 2px solid #fd7e14;
+    border-radius: 3px;
+    color: #fd7e14;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 18px 0;
+}
+
+.btn-primary-outline:hover {
+    background-color: #fd7e14;
+    border-radius: 3px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 18px 0;
+}
+
+.btn-secondary-outline {
+    background-color: #ffffff;
+    border: 2px solid #25246e;
+    border-radius: 3px;
+    color: #25246e;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 18px 0;
+}
+
+.btn-secondary-outline:hover {
+    background-color: #25246e;
+    border-radius: 3px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 18px 0;
+}
+
+.btn-dark-grey-outline {
+    background-color: #ffffff;
+    border: 2px solid #363636;
+    border-radius: 3px;
+    color: #363636;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 18px 0;
+}
+
+.btn-dark-grey-outline:hover {
+    background-color: #363636;
+    border-radius: 3px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 18px 0;
+}
+
+button {
+    color: #ffffff !important;
+    font-weight: 400;
+    text-decoration: underline !important;
+}
+
+button:hover {
+    color: #ffffff !important;
+    font-weight: 600;
+    text-decoration: none !important;
+}
+
+
+/*Links*/
+.link-primary {
+    color: #fd7e14;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.link-primary:hover {
+    color: #fd7e14;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.link-secondary {
+    color: #3c3c3c;
+    font-weight: 600;
+    text-decoration: none !important;
+}
+
+.link-secondary:hover {
+    color: #3c3c3c;
+    font-weight: 400;
+}
+
+.link-light {
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.link-light:hover {
+    color: #ffffff;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+
+.link-dark-grey {
+    color: #363636;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.link-dark-grey:hover {
+    color: #363636;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.link-content-wrapper {
+    color: #363636;
+    text-decoration: none;
+}
+
+.link-content-wrapper:hover {
+    color: #363636;
+    text-decoration: none;
+}
+
+.copyright {
+    text-align: right;
+    font-size: 12px;
+    margin: 5px;
+}
+
+/*Accordion*/
+#accordion {
+    min-width: 100%;
+    border: 1px solid #ffffff !important;
+}
+
+.card {
+    min-width: 100%;
+    border: 1px solid #ffffff !important;
+}
+
+.card-header {
+    border: 1px solid #ffffff !important;
+}
+
+
+/*Scroll Effects*/
+.hover-item {
+    transition: 0.3s;
+}
+
+.hover-item:hover {
+    transform: translate(0, -10px);
+}
+
+#more {
+    display: none;
+}
+
+/*Top Button*/
+.scroll-top {
+    display: none;
+}
+
+.scroll-arrow {
+    display: inline-block;
+    color: #fd7e14;
+    font-size: 30px;
+    text-align: right;
+    background-color: #ffffff;
+    border-bottom: 2px solid #e6eaea;
+}
+
+.scroll-arrow:hover {
+    transform: scale(1.2);
+    transition: .3s ease-in-out;
+}
