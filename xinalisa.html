@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>xinalisa</title>
+	  
+<!-- Bootstrap -->
+    <link href="../Portfolio/css/bootstrap-4.4.1.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../Portfolio/css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;800&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Portfolio/css/bootstrap-icons.css">
+
+<!--Favicon-->
+<link rel="icon" href="../Portfolio/img/Logo.png">
+	  
+</head>
+
+    <style>
+        
+        /* Image Columns */
+
+        .col1 {
+            background-image: url(../Portfolio/img/bg1.jpeg); 
+			background-position: center;
+            background-repeat:no-repeat;
+            background-size: cover;
+           -webkit-background-size: cover;
+           -moz-background-size: cover;
+           -o-background-size: cover;
+        }
+        .col2 {
+            background-image: url(../Portfolio/img/bg2.jpeg);
+			background-position: center;
+            background-repeat:no-repeat;
+            background-size: cover;
+           -webkit-background-size: cover;
+           -moz-background-size: cover;
+           -o-background-size: cover;
+        }
+        .col3 {
+            background-image: url(../Portfolio/img/bg3.jpeg);
+			background-position: center;
+            background-repeat:no-repeat;
+            background-size: cover;
+           -webkit-background-size: cover;
+           -moz-background-size: cover;
+           -o-background-size: cover;
+        }
+		.col4 {
+            background-image: url(../Portfolio/img/bg1.png);
+			background-position: left;
+            background-repeat:no-repeat;
+            background-size: cover;
+           -webkit-background-size: cover;
+           -moz-background-size: cover;
+           -o-background-size: cover;
+        }
+		.col5 {
+            background-image: url(../Portfolio/img/bg2.png);
+			background-position: left;
+            background-repeat:no-repeat;
+            background-size: cover;
+           -webkit-background-size: cover;
+           -moz-background-size: cover;
+           -o-background-size: cover;
+        }
+		.col6 {
+            background-image: url(../Portfolio/img/bg3.png);
+			background-position: left;
+            background-repeat:no-repeat;
+            background-size: cover;
+           -webkit-background-size: cover;
+           -moz-background-size: cover;
+           -o-background-size: cover;
+        }	
+		.col7 {
+            background-image: url(../Portfolio/img/bg4.png);
+			background-position: center;
+            background-repeat:no-repeat;
+            background-size: cover;
+           -webkit-background-size: cover;
+           -moz-background-size: cover;
+           -o-background-size: cover;
+        }
+		.col8 {
+            background-image: url(../Portfolio/img/bg5.png);
+			background-position: center;
+            background-repeat:no-repeat;
+            background-size: cover;
+           -webkit-background-size: cover;
+           -moz-background-size: cover;
+           -o-background-size: cover;
+        }			
+        
+        /* Image To Text On Hover */
+        
+        .hovtxt {
+            background:#00000080;
+            opacity:0;
+            transition-duration:.5s;
+            transition-timing-function: ease-in-out;
+            height:300px;
+        }
+        
+         .hovtxt:hover {
+            opacity:1;
+        }
+    
+		/* Header Background Styling */
+#intro-example {
+  background-image: url("../xinalisa/img/HCP.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  position: relative;
+}
+
+@media (min-width: 992px) {
+  #intro-example {
+    height: 600px;
+  }
+}
+
+#intro-example .mask {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+		
+    </style>
+
+<!-- Responsive Navbar -->
+<header class="sticky-top bg-dark">
+
+<nav class="navbar navbar-expand-lg col-xl-12 navbar-light bg-light" id="main-bar">
+
+  <!--Logo-->
+  <div class="order-0 order-md-1 position-absolute main-logo">
+  <a class="mx-auto" href="../xinalisa/xinalisa.html">
+  <img src="../xinalisa/img/xinalisaLOGO.png" class="nav-brand" alt="logo" height="35px" width="50px">
+  </a>
+  </div>
+  <!--End of Logo-->
+	
+    <div class="d-flex flex-grow-1">
+
+        <span class="w-100 d-lg-none d-block"><!-- hidden spacer to center brand on mobile --></span>
+
+        <div class="w-100 text-right">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="collapse navbar-collapse flex-grow-1 text-right text-black" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+      <li class="nav-item">
+        <a class="nav-link text-uppercase" href="../xinalisa/xinalisa.html">Home</a>
+      </li>
+			
+<li class="nav-item dropdown">
+<a class="nav-link text-uppercase" href="../xinalisa/about.html" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">About</a>
+</li> 
+		
+<li class="nav-item dropdown">
+<a class="nav-link text-uppercase" href="mailto:christinalbarbosa@gmail.com" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact</a>
+</li> 			
+			
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle text-uppercase" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <div class="container col-xl-12">
+                <div class="row col-xl-12">
+                  <div class="col-md-4 col-xl-3">
+                    <span class="text-uppercase text-black">UX/UI Design</span>
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link" href="../Portfolio/casestudy2.html">Homeland Security</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../Portfolio/casestudy.html">Food Culture</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../Portfolio/casestudy3.html">Amazing Lash Studio</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- /.col-md-4  -->
+                  <div class="col-md-4 offset-xl-0 col-xl-3">
+                    <span class="text-uppercase text-black">Graphic Design</span>
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link" href="../Portfolio/graphicdesign.html">Rayito De Sol</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../Portfolio/graphicdesign2.html">Angel's Bridal</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../Portfolio/graphicdesign3.html">Amazing Lash Studio</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- /.col-md-4  -->
+                </div>
+              </div>
+              <!--  /.container  -->
+            </div>
+          </li>	
+    </ul>
+    </div>
+	
+</nav>
+
+</header>
+<!-- End of Header-->
+<body>	
+
+
+<header>
+  <!-- Intro settings -->
+  <style>
+    /* Default height for small devices */
+    #intro-example {
+      height: 400px;
+    }
+
+    /* Height for devices larger than 992px */
+    @media (min-width: 992px) {
+      #intro-example {
+        height: 600px;
+      }
+    }
+  </style>
+
+
+  <!-- Background image -->
+	
+<header id="intro-example" class="p-5 text-center bg-image">
+  <div class="mask">
+    <div class="d-flex justify-content-center align-items-center h-100">
+      <div class="text-white">
+        <h1 class="mb-3">Halloween Coloring Pages</h1>
+        <h5 class="mb-4">Free PDF Printables</h5>
+        <a class="btn btn-outline-light btn-lg m-2" href="https://www.youtube.com/watch?v=c9B4TPnak1A" role="button" rel="nofollow" target="_blank">Browse Pages</a>
+        <a class="btn btn-outline-light btn-lg m-2" href="https://mdbootstrap.com/docs/standard/" target="_blank" role="button">Download Here</a>
+      </div>
+    </div>
+  </div>
+</header>  
+
+	
+<!--Text-->	
+ <div class="container px-5">
+                <div class="row gx-5 justify-content-center">
+    <h3 class="font-weight-bold text-uppercase" style="padding-bottom:20px; padding-top:30px;">Projects</h3>
+  </div>
+</div>	
+	
+<!--Card Hover-->	
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-6" style="padding-bottom:30px;">
+          <div class="col1 p-0 my-0 ml-6">
+                <div class="hovtxt p-5 text-center text-light">
+					<a href="../Portfolio/casestudy2.html" class="link-content-wrapper text-white">
+					<br>
+					<br>	
+				    <h4><em>2022</em></h4>
+                    <h2>Homeland Security Redesign</h2></a>                
+              </div>
+				</div>
+                 <div class="py-4 px-5 bkg-light-grey">
+                 <h2 class="font-weight-bold">Homeland Security</h2>
+				 <p>Website usability and redesign for United State Department of Homeland Security, DHS.gov.</p>
+				 <a href="../Portfolio/casestudy2.html" class="link-primary">View Redesign</a>
+            </div>            
+        </div>
+		
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-6" style="padding-bottom:30px;">
+            <div class="col2 p-0 m-0 my-0 mr-6">
+                <div class="hovtxt p-5 text-center text-light">
+                    <a href="../Portfolio/casestudy.html" class="link-content-wrapper text-white">
+					<br>
+					<br>	
+					<h4><em>2022</em></h4>
+					<h2>Food Culture Case Study</h2></a>                
+                </div>
+				</div>
+				<div class="py-4 px-5 bkg-light-grey">
+                <h2 class="font-weight-bold">Food Culture App</h2>
+                <p>Case Study and Design for a new food ordering and delivery  App with a fun twist.</p>
+				<a href="../Portfolio/casestudy.html" class="link-primary">View Project</a>
+            </div>            
+        </div>
+<!--Row Two-->		
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-6" style="padding-bottom:30px;">
+            <div class="col3 p-0 m-0 my-0 ml-6">
+                <div class="hovtxt p-5 text-center text-light">
+                    <a href="../Portfolio/casestudy3.html" class="link-content-wrapper text-white">
+					<br>
+					<br>	
+					<h4><em>2022</em></h4>
+					<h2>Amazing Lash Studio Redesign</h2>
+                    </a>                
+                </div>
+				</div>
+				<div class="py-4 px-5 bkg-light-grey">
+                <h2 class="font-weight-bold">Amazing Lash Studio</h2>
+                <p>Website usability and redesigned for Amazing Lash Studio, a beauty services retailer focused on eyelash extensions.</p>
+				<a href="../Portfolio/casestudy3.html" class="link-primary">View Redesign</a>
+            </div>            
+        </div>
+		
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-6" style="padding-bottom:30px;">
+            <div class="col4 p-0 m-0 my-0 mr-6">
+                <div class="hovtxt p-5 text-center text-light">
+                    <a href="../Portfolio/graphicdesign.html" class="link-content-wrapper text-white">
+					<br>
+					<br>	
+					<h4><em>2019</em></h4>
+					<h2>Rayito de Sol</h2>
+                    </a>                
+                </div>
+				</div>
+				<div class="py-4 px-5 bkg-light-grey">
+                <h2 class="font-weight-bold">Rayito de Sol</h2>
+                <p>Digital Media content created for Rayito de Sol, a Spanish immersion early learning center.</p>
+				<a href="../Portfolio/graphicdesign.html" class="link-primary">View Project</a>
+            </div>            
+        </div>
+<!--Row Three-->		
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-6" style="padding-bottom:30px;">
+        <div class="col5 p-0 m-0 my-0 ml-6">
+                <div class="hovtxt p-5 text-center text-light">
+                    <a href="../Portfolio/graphicdesign2.html" class="link-content-wrapper text-white">
+					<br>
+					<br>	
+					<h4><em>2019</em></h4>
+					<h2>Angel's Bridal</h2>
+                    </a>                
+            </div>
+				</div>
+				<div class="py-4 px-5 bkg-light-grey">
+                <h2 class="font-weight-bold">Angel's Bridal</h2>
+                <p>Digital Media content created for Angel's Bridal, a neighborhood bridal salon in Staten Island, New York.</p>
+				<a href="../Portfolio/graphicdesign2.html" class="link-primary">View Project</a>
+        </div>            
+      </div>
+		
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-6" style="padding-bottom:30px;">
+        <div class="col6 p-0 m-0 my-0 mr-6">
+                <div class="hovtxt p-5 text-center text-light">
+                    <a href="../Portfolio/graphicdesign3.html" class="link-content-wrapper text-white">
+					<br>
+					<br>	
+					<h4><em>2018</em></h4>
+					<h2>Amazing Lash Studio</h2>
+                    </a>                
+            </div>
+				</div>
+				<div class="py-4 px-5 bkg-light-grey">
+                <h2 class="font-weight-bold">Amazing Lash Studio</h2>
+                <p>Graphic Design for Amazing Lash Studio, 2018 Summer to Holiday Social Media Content.</p>
+				<a href="../Portfolio/graphicdesign3.html" class="link-primary">View Project</a>
+        </div>            
+      </div>
+<!--Row Four-->		
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-6" style="padding-bottom:30px;">
+            <div class="col7 p-0 m-0 my-0 ml-6">
+                <div class="hovtxt p-5 text-center text-light">
+                    <a href="../Portfolio/graphicdesign4.html" class="link-content-wrapper text-white">
+					<br>
+					<br>	
+					<h4><em>2018</em></h4>
+					<h2>Lisa's Studio Rebranding</h2>
+                    </a>                
+                </div>
+		</div>
+				<div class="py-4 px-5 bkg-light-grey">
+                <h2 class="font-weight-bold">Lisa's Studio Photography</h2>
+                <p>Rebranding for Lisa's Studio Photography with a Logo and brand name refresh.</p>
+				<a href="../Portfolio/graphicdesign4.html" class="link-primary">View Redesign</a>
+        </div>            
+      </div>
+		
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-6" style="padding-bottom:30px;">
+            <div class="col8 p-0 m-0 my-0 mr-6">
+                <div class="hovtxt p-5 text-center text-light">
+                    <a href="../Portfolio/graphicdesign5.html" class="link-content-wrapper text-white">
+					<br>
+					<br>	
+					<h4><em>2018</em></h4>
+					<h2>Alice Adventures in Wonderland</h2>
+                    </a>                
+                </div>
+		</div>
+				<div class="py-4 px-5 bkg-light-grey">
+                <h2 class="font-weight-bold">Alice's Adventures in Wonderland</h2>
+                <p>Poker Cards Illustration based off of Lewis Caroll's novel, Alice's Adventures in Wonderland.</p>
+				<a href="../Portfolio/graphicdesign5.html" class="link-primary">View Project</a>
+        </div>            
+      </div>			
+<!--Row End-->		
+  </div>
+</div>    	
+    <!--Connect-->
+    <div class="container-fluid">
+        <div class="row bkg-light-grey text-center py-5 my-5">
+            <div class="col-12">
+              <h3 class="font-weight-bold">Let's Create</h3>
+              <p> <a class="link-primary" target="blank" href="mailto:xina.lisa.x@gmail.com">xina.lisa.x@gmail.com</a> </p>
+              <p class="small">©xinalisa 2024. All Rights Reserved</p>
+          </div>
+        </div>
+        <!--Back to Top-->
+        <div class="row fixed-bottom my-3">
+            <div class="col-1 offset-10 offset-sm-11 offset-md-11 offset-lg-11 offset-xl-11">
+                <a href="#top" class="scroll text-right" title="Click arrow to return on the top page">
+                    <p class="scroll-arrow text-center mb-1 py-1 px-2">^</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="../xinalisa/js/jquery-3.4.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../xinalisa/js/popper.min.js"></script>
+<script src="../xinalisa/js/bootstrap-4.4.1.js"></script>
+</body>
+</html>
